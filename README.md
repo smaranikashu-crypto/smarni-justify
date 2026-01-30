@@ -80,3 +80,4 @@ added 10 packages, and audited 374 packages in 5s
 found 0 vulnerabilities
 (.venv) @bscCohort ➜ /workspaces/justify/frontend (main) $ 
 ```
+to install cors run command pip install flask-cors
