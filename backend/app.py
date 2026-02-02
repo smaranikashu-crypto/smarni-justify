@@ -4,6 +4,7 @@ from flask_cors import CORS
 from db import ensure_schema, db_check
 
 from controllers.health_controller import health_bp
+from controllers.predict_controller import predict_bp
 
 def create_app():
     app = Flask(__name__)
@@ -13,6 +14,7 @@ def create_app():
     ensure_schema()
     
     app.register_blueprint(health_bp)
+    app.register_blueprint(predict_bp)
     return app
 
 app = create_app()
