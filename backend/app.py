@@ -1,10 +1,17 @@
 from flask import Flask
 from flask_cors import CORS
 
+from db import ensure_schema, db_check
+
 from controllers.health_controller import health_bp
+
 def create_app():
     app = Flask(__name__)
     CORS(app)
+
+    db_check()
+    ensure_schema()
+    
     app.register_blueprint(health_bp)
     return app
 
