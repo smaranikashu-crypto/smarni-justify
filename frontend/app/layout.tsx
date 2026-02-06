@@ -59,7 +59,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t border-gray-800">
           <div className="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-500 text-center">
-            © {new Date().getFullYear()} JustiFy — Legal Triage Assistant | Built With ❤️ By Asutosh Panda
+            © {new Date().getFullYear()} JustiFy — Legal Triage Assistant | Built With ❤️ By Smaranika Sahu
           </div>
         </footer>
       </body>
